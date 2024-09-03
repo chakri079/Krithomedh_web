@@ -1,0 +1,90 @@
+/* src/components/Login.css */
+
+/* Container styles */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #5a5c9f;
+    border-radius: 5px;
+    box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.1);
+    background-color: #cee6f1;
+    text-align: center;
+    margin-top: 120px; /* Adjusted margin-top */
+    margin-bottom: 125px; /* Adjusted margin-bottom */
+    overflow: hidden; /* Hide overflow for animation */
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+}
+
+/* Heading styles */
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    opacity: 1;
+    transition: opacity 0.3s ease; /* Added transition */
+}
+
+/* Form group styles */
+.form-group {
+    margin-bottom: 20px; /* Increased margin for better spacing */
+    text-align: left;
+    opacity: 1;
+    transition: opacity 0.3s ease; /* Added transition */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+    opacity: 1;
+    transition: opacity 0.3s ease; /* Added transition */
+}
+
+.form-group input {
+    width: calc(100% - 16px); /* Adjusted input width */
+    padding: 12px; /* Increased padding */
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Added transition for border-color and box-shadow */
+}
+
+.form-group input:focus {
+    border-color: #2575c5; /* Highlight border color on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 8px rgba(37, 117, 197, 0.6); /* Add box-shadow on focus */
+}
+
+/* Submit button styles */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px 15px; /* Adjusted padding */
+    border: none;
+    border-radius: 4px;
+    background-color: #2575c5;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added box-shadow for button */
+}
+
+button[type="submit"]:hover {
+    background-color: #155a9a;
+    transform: translateY(-2px); /* Lift button on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Enhanced box-shadow on hover */
+}
+
+/* Animation on form submission */
+.login-container.submitting {
+    transform: translateY(50px);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Added transition */
+}

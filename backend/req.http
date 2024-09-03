@@ -1,0 +1,7 @@
+post http://localhost:4000/user-app/login
+Content-Type: application/json
+
+{
+    "id" : "1234",
+    "password" : "12345"
+}

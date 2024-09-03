@@ -1,0 +1,84 @@
+/* Container styles */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align items horizontally */
+  padding: 20px;
+}
+
+/* Section styles */
+.section {
+  position: relative; /* For positioning the dropdown arrow */
+  width: 100%; /* Ensure all sections take full width of their container */
+  max-width: 600px; /* Adjust maximum width as needed */
+  background-color: #c2cbf0; /* Light gray background */
+  border: 2px solid #ccc; /* Light border */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(81, 99, 125, 0.1); /* Soft shadow */
+  text-align: center; /* Center align text */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transform and box-shadow transitions */
+}
+
+/* Highlight effect on hover */
+.section:hover {
+  border-color: #212821; /* Green border on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Dropdown arrow */
+.section::after {
+  content: '▼';
+  font-size: 24px;
+  color: #333;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transition: transform 0.3s; /* Smooth arrow rotation */
+}
+
+.section:hover::after {
+  transform: rotate(180deg); /* Rotate arrow on hover */
+}
+
+/* Heading styles */
+.section-heading {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Content paragraph styles */
+.section-content {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #100c0c;
+}
+
+/* Social icons styles */
+.social-icons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.social-icons p {
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: transform 0.3s; /* Smooth transform for hover effect */
+}
+
+.social-icons img:hover {
+  transform: scale(1.1); /* Slightly enlarge icon on hover */
+}

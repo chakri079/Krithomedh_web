@@ -1,0 +1,13 @@
+/* EventsPage.css */
+.events-page {
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .events-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #343a40;
+  }
+  

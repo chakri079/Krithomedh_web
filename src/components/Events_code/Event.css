@@ -1,0 +1,117 @@
+/* General styles for the events page */
+.events-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #b7cdea;
+  min-height: 100vh;
+}
+
+/* Styles for the events timeline */
+.events-timeline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Styles for the event card */
+.event-card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  width: 300px;
+  text-align: center;
+}
+
+.event-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.event-card img.event-poster {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.event-card h3 {
+  font-size: 1.5em;
+  margin: 10px 0 5px 0;
+}
+
+.event-card p {
+  color: #777;
+  font-size: 0.9em;
+  margin: 5px 0 15px 0;
+}
+
+/* Styles for the event details container */
+.event-details-container {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  text-align: left; /* Ensures text is left-aligned */
+}
+
+.event-details-container img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px; /* Adds space between image and text */
+}
+
+.event-details-container h2 {
+  font-size: 2em;
+  margin-top: 0;
+}
+
+.event-details-container p {
+  font-size: 1em;
+  color: #191717;
+  line-height: 1.6;
+}
+
+.event-details-container .event-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.event-details-container .event-info div {
+  margin: 10px 0;
+}
+
+.event-details-container .event-outcome {
+  margin-top: 20px;
+  white-space: pre-line;
+}
+
+.close-details {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ff5c5c;
+  border: none;
+  color: rgb(167, 160, 160);
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background 0.3s;
+}
+
+.close-details:hover {
+  background: #ff1c1c;
+}
