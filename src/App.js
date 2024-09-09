@@ -25,6 +25,7 @@ const App = () => {
                     <Route path="events/:eventname" element={<Event />} />
                     {/* <Route path="events/TECHNOVISTA" element={<Technovista />} /> */}
                     <Route path="login" element={<Login />} />
+                    <Route path="*" element={<Home />} />
                 </Routes>
             </main>
             <Footer />
