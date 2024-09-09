@@ -10,6 +10,10 @@ const Header = () => {
         setSidebarActive(!sidebarActive);
     };
 
+    const closeSidebar = () => {
+        setSidebarActive(false);
+    };
+
     return (
         <>
             <header className="header">
@@ -32,11 +36,11 @@ const Header = () => {
             </header>
             <div className={`sidebar ${sidebarActive ? 'active' : ''}`} id="sidebar">
                 <nav className="sidebar-links">
-                    <Link to="/" onClick={toggleSidebar}>Home</Link>
-                    <Link to="/about" onClick={toggleSidebar}>About</Link>
-                    <Link to="/events" onClick={toggleSidebar}>Events</Link>
-                    <Link to="/team" onClick={toggleSidebar}>Team</Link>
-                    <Link to="/login" onClick={toggleSidebar}>Login</Link>
+                    <Link to="/" onClick={closeSidebar}>Home</Link>
+                    <Link to="/about" onClick={closeSidebar}>About</Link>
+                    <Link to="/events" onClick={closeSidebar}>Event</Link>
+                    <Link to="/team" onClick={closeSidebar}>Team</Link>
+                    <Link to="/login" onClick={closeSidebar}>Login</Link>
                 </nav>
             </div>
         </>

@@ -81,7 +81,8 @@
     display: none;
     flex-direction: column;
     align-items: center;
-    position: fixed;
+    position:fixed;
+    margin-top: 10px;
     top: 0;
     right: 0;
     width: 250px;
@@ -102,7 +103,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .sidebar-links a {
